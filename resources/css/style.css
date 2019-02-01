@@ -1,0 +1,1303 @@
+/* This makes the backgroumd git to the viewport */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: monospace;
+}
+
+header {
+    background-image: url(../images/horses.png); /* Image source: https://www.pexels.com/photo/grayscale-photography-of-two-horse-statues-906795/ */
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    background-blend-mode: overlay;
+    font-size: 1em;
+}
+
+.logoAndNav {
+    max-width: 90%;
+    margin: auto;
+}
+
+.logo img {
+    width: 9.4em;
+    height: auto;
+    float: left;
+    margin-top: 2em;
+}
+
+.mainNavBar {
+    float: right;
+    margin-top: 4.5em;
+}
+
+.mainNavBar a {
+    display: inline-block;
+    color: rgb(225, 225, 225);
+    text-decoration: none;
+    padding: .3em 1.3em;
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.mainNavBar a:hover {
+    border: .1em solid rgb(225, 225, 225);
+}
+
+.mainNavBar a.active {
+    border: .1em solid rgb(225, 225, 225);
+}
+
+.homeHero {
+    position: absolute;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20em;
+    margin-left: 28em;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+section h1 {
+    text-transform: uppercase;
+    font-size: 4em;
+    color: rgb(246, 161, 45);
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    margin-bottom: .5em;
+    font-weight: 900;
+}
+
+.homeHeroSpan {
+    font-size: 1.8em;
+    color: rgb(246, 161, 45);
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    margin-bottom: 2em;
+    font-weight: 800;
+}
+
+.heroButton {
+    color: rgb(225, 225, 225);
+    background: none;
+    padding: .5em 1.3em;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    border: .12em solid rgb(225, 225, 225);
+}
+
+.heroButton:hover {
+    background: rgb(4, 112, 186);
+}
+
+
+/* About Me Section
+=========================================== */
+.aboutSection {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(255, 255, 255);
+    font-size: 1em;
+    display: table;
+}
+
+.aboutContainer, .skillsContainer {
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+    padding: 1em;
+    text-align: center;
+  }
+  
+/* About me image syling */
+.carlosImg {
+    width: 10em;
+    border-radius: 10%;
+}
+
+h2 {
+  font-size: 2em;
+  margin-top: 1em;
+  margin-bottom: .5em;
+}
+
+.aboutMeBorder, .skillsBorder {
+    margin-top: 3.3em;
+    margin-bottom: 3.3em;
+    width: 90%;
+    height: 90%;
+    border: .5em solid rgba(0, 0, 0, .6);
+}
+
+.aboutMeContent, .skillsContent {
+    margin: 2em;
+}
+
+.aboutMeBorder {
+    margin-left: 3.7em;
+}
+
+.aboutMeP {
+    display: block;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    line-height: 1.3em;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.skillsBorder {
+    margin-left: 1.4em;
+}
+
+.skillsContent {
+    text-align: center;
+}
+
+.gridSkillsContainer {
+    display: grid;
+    margin-top: 4.5em;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+}
+
+.skillsImg {
+    width: 6em;
+}
+
+.skillsImg:hover {
+    transition: 0.70s;
+    transform: rotate(360deg);
+}
+
+
+/* Portfolio Section
+=========================================== */
+.portfolioSection {
+    background-image: url(../images/greenLeaves.png); /* Image source: www.pexels.com/photo/green-leaves-1072179/ */
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    font-size: 1em;
+}
+
+.portfolioH3Style {
+    position: absolute;
+    width: 14%;
+    color: rgb(255, 238, 0);
+    margin: 0 auto;
+    margin-top: .8em;
+    margin-left: 18.5em;
+    text-align: center;
+    font-size: 3em; 
+}
+
+.portfolioContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.portfolioContent {
+    display: grid;
+    margin-top: 10em;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 0;
+    grid-row-gap: 13em;
+    justify-content: space-around;
+    text-align: center;
+    color: rgb(225, 225, 225);
+}
+
+.gridPortfolioItem {
+    position: relative;
+    width: 35em;
+    overflow: auto;
+}
+
+.portfolioImg {
+    width: 35em;
+}
+
+.ribbon {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    width: 100%;
+    padding: .8em;
+    font-weight: 300;
+    line-height: 30px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1.5em;
+    background-color: rgb(50, 56, 49);
+    color: rgb(255, 238, 0);
+    
+}
+
+.ribbon:hover {
+    font-weight: 900;
+    background-color: rgb(255, 238, 0);
+    color: rgb(50, 56, 49);
+}
+
+
+
+/* Testimonials Section
+=========================================== */
+.testimonialSection {
+    background-image: url(../images/swirl_pattern.png); /* Image source: www.toptal.com/designers/subtlepatterns/?s=wave */
+    height: 100vh;
+    font-size: 1em;
+}
+
+.testimonialH4Style {
+    position: absolute;
+    margin: 0 auto;
+    margin-top: .8em;
+    width: 20%;
+    margin-left: 17em;
+    text-align: center;
+    font-size: 3em; 
+}
+
+
+.contentStyle {
+    position: absolute;
+    margin: 0 auto;
+    margin-top: 10em;
+    margin-left: 18.5em;
+    width: 70%;
+    height: 70%;
+    background: rgb(50, 50, 50);
+}
+
+.slideshow {
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+    background: rgba(248, 248, 248, 0.6);
+    color: rgb(225, 225, 225);
+    text-align: center;
+    font-size: 2em;
+}
+
+.slide1 {
+    background-image: url(../images/dark_wood.png); /* Image source: www.toptal.com/designers/subtlepatterns/?s=wood */
+    margin: 10px;  /* em didn't work */
+    margin-top: 1.8em;
+    padding: 10em 5em;
+    box-shadow: 2px 6px 8px rgba(26, 25, 25, 0.6);
+}
+
+.slide2 {
+    background-image: url(../images/dark_wood.png); /* Image source: www.toptal.com/designers/subtlepatterns/?s=wood */
+    margin: 10px;  /* em didn't work */
+    margin-top: 1.8em;
+    padding: 10em 5em;
+    box-shadow: 2px 6px 8px rgba(26, 25, 25, 0.6);
+}
+
+.slide3 {
+    background-image: url(../images/dark_wood.png); /* Image source: www.toptal.com/designers/subtlepatterns/?s=wood */
+    margin: 10px;  /* em didn't work */
+    margin-top: 1.8em;
+    padding: 10em 5em;
+    box-shadow: 2px 6px 8px rgba(26, 25, 25, 0.6);
+}
+
+
+
+/* Contact Section
+=========================================== */
+.contactSection {
+    background-image: url(../images/blossom.png); /* Image source: www.pexels.com/photo/nature-flowers-trees-petals-89102/ */
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    font-size: 1em;
+}
+
+.contactContainer {
+    position: absolute;
+    background: rgba(225, 225, 225, .8);
+    width: 92%;
+    height: 85%;
+    margin: 5em;
+    border: .5em solid rgba(0, 0, 0, .6);
+    padding: 5em;
+}
+
+.contactH5Style {
+    margin-bottom: 1.5em;
+    font-weight: 700;
+    color: rgb(4, 112, 186);
+    padding-bottom: 20px;
+    font-size: 30px;
+    line-height: 49px;
+    border-bottom: .1em solid rgba(0, 0, 0, .6);
+}
+
+/* contact form */
+  
+#contact-form ul {
+    margin-bottom: 20px;
+}
+  
+#contact-form li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+  
+label,
+input[type=text],
+input[type=email],
+textarea {
+    display: block;
+    width: 100%;
+}
+  
+input[type=text],
+input[type=email],
+textarea {
+    height: 35px;
+    padding: 0 10px;
+    font-size: 14px;
+    border: .1em solid rgba(0, 0, 0, .6);
+}
+
+label {
+    list-style: none;
+}
+  
+textarea {
+    height: 200px;
+}
+  
+input[type=submit] {
+    padding: 10px 30px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    background: rgb(4, 112, 186);
+    font-weight: 600;
+    border: 0 none;
+  }
+
+input[type=submit]:hover {
+      background: rgb(255, 107, 135);
+      color: rgba(0, 0, 0, .6);
+      font-weight: 600;
+      border: .1em solid rgba(0, 0, 0, .6);
+      
+}
+
+footer {
+    height: 15em;
+    background: rgba(0, 0, 0, .9);
+    color: rgb(225, 225, 225);
+    text-align: center;
+}
+
+
+.footerContainer {
+    position: absolute;
+    width: 10%;
+    margin-top: 3em;
+    margin-left: 58em;
+}
+
+.followMeFooter {
+    border-bottom: .2em solid rgba(246, 161, 45);
+}
+
+.footerIconStyle {
+    margin-top: 1em;
+    margin-bottom: .5em;
+}
+
+.fa-github, .fa-linkedin-in {
+    color: rgb(225, 225, 225);
+}
+
+.fa-github {
+    margin-right: .2em;
+}
+
+.fa-github:hover {
+    color: rgba(246, 161, 45);
+}
+
+.fa-linkedin-in {
+    margin-left: .2em;
+}
+
+.fa-linkedin-in:hover {
+    color: rgba(246, 161, 45);
+}
+
+.copyright {
+    margin-top: .5em;
+}
+
+
+/* mobile responsiveness */
+@media screen and (max-width: 1024px) {
+    /* home or showcase section */
+    .logo img {
+        width: 12em;
+    } .mainNavBar {
+        float: right;
+        margin-top: 5em;
+    } .mainNavBar a {
+        padding: .1em .3em;
+        font-size: 1.2em;
+        font-weight: 600;
+    } .homeHero {
+        width: 65%;
+        margin-top: 25em;
+        margin-left: 11.5em;
+    } .homeHeroSpan {
+        margin-bottom: 4em;
+    } .heroButton {
+        padding: .5em 1.3em;
+        font-size: 1.6em;
+        font-weight: 600;
+    }
+    /* about me section */
+    .aboutContainer, .skillsContainer  {
+        display: block;
+        width: 100%;
+        padding: 0;
+    } .aboutMeBorder {
+        margin-top: 3.5em;
+        margin-bottom: 3.5em;
+        margin-left: 0em;
+        width: 100%;
+        height: 100%;
+    } .skillsBorder {
+        margin-bottom: 3.5em;
+        margin-left: 0em;
+        width: 100%;
+        height: 100%;
+    } .aboutMeContent {
+        margin: 2em;
+        padding-bottom: .5em;
+    } .skillsContent {
+        margin: 2em;
+        padding-bottom: .5em;
+    } .carlosImg {
+        width: 10em;
+        border-radius: 10%;
+        float: left;
+        margin-right: 2em;
+        margin-top: 4em;
+    } .aboutMeP {
+        font-size: 1.7em;
+    } .gridSkillsContainer {
+        margin-top: 4.5em;
+        grid-template-columns: auto auto auto auto;
+        grid-column-gap: 50px;
+        grid-row-gap: 50px;
+    } .skillsImg {
+        width: 5em;
+        vertical-align: middle;
+    } 
+    /* portfolio section */
+    .portfolioContent {
+        grid-template-columns: auto auto;
+        grid-row-gap: 9em;
+        margin-top: 13em;
+    } .portfolioH3Style {
+        margin-left: 7.5em;
+        font-size: 4em;
+    }
+    /* testimonials section */
+    .testimonialH4Style {
+        margin-top: 1.5em;
+        margin-left: 10em;
+    } .contentStyle {
+        margin-top: 15em;
+        margin-left: 4em;
+        width: 90%;
+        height: 48%;
+    }
+    /* contact me section */
+    .contactContainer {
+        width: 86%;
+        height: 89%;
+        margin: 5em;
+        border: .5em solid rgba(0, 0, 0, .6);
+        padding: 5em;
+    } .contactH5Style {
+        font-size: 4em;
+    } 
+    label,
+    input[type=text],
+    input[type=email],
+    textarea {
+        font-size: 2.5em;
+}
+    input[type=text],
+    input[type=email],
+    textarea {
+        /* height: 1.5em; */
+        padding: 0 10px;
+        font-size: 1.5em;
+        border: .1em solid rgba(0, 0, 0, .6);
+    }
+    input[type=submit] {
+        padding: 13px 33px;
+        font-size: 2em;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        font-weight: 600;
+        border: 0 none;
+      }
+    input[type=submit]:hover {
+        padding: 10px 30px;
+        font-weight: 600;
+    }
+    /* footer section */
+    .footerContainer {
+        width: 20%;
+        margin-top: 3em;
+        margin-left: 32em;
+    } .followMeFooter span {
+        font-size: 2em;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    /* home or showcase section */
+    .logo img {
+        width: 10em;
+    } .mainNavBar {
+        float: right;
+        margin-top: 5em;
+    } .mainNavBar a {
+        padding: .1em .3em;
+        font-size: .9em;
+        font-weight: 600;
+    } .homeHero {
+        width: 80%;
+        margin-top: 20em;
+        margin-left: 5em;
+    } section h1 {
+        font-size: 3em;
+        margin-bottom: .5em;
+        font-weight: 900;
+    } .homeHeroSpan {
+        margin-bottom: 4em;
+        font-size: 1.7em;
+    } .heroButton {
+        padding: .5em 1.3em;
+        font-size: 1.4em;
+        font-weight: 600;
+    }
+    /* about me section */
+    .aboutContainer, .skillsContainer  {
+        display: block;
+        width: 100%;
+        padding: 0;
+    } .aboutMeBorder {
+        margin-top: 0em;
+        margin-bottom: 1em;
+        margin-left: 0em;
+        width: 100%;
+        height: 100%;
+    } .skillsBorder {
+        margin-top: 0em;
+        margin-bottom: 0em;
+        margin-left: 0em;
+        width: 100%;
+        height: 100%;
+    } .aboutMeContent {
+        margin: 2em;
+        padding-bottom: 0em;
+    } .skillsContent {
+        margin-bottom: 1.2em;
+        padding-bottom: .5em;
+    } h2 {
+        font-size: 2em;
+        margin-top: .5em;
+        margin-bottom: .5em;
+      }
+    .carlosImg {
+        width: 10em;
+        border-radius: 10%;
+        float: none;
+        margin-right: 0em;
+        margin-top: 0em;
+    } .aboutMeP {
+        font-size: 1.2em;
+    } .gridSkillsContainer {
+        margin-top: 0em;
+        grid-template-columns: auto auto auto auto;
+        grid-column-gap: 50px;
+        grid-row-gap: 50px;
+    } .skillsImg {
+        width: 3.5em;
+        vertical-align: middle;
+    } 
+   /* portfolio section */
+   .portfolioContent {
+    grid-template-columns: auto auto;
+    margin-top: 10em;
+    grid-column-gap: 0;
+    grid-row-gap: 7em;
+} .portfolioH3Style {
+    margin-left: 7em;
+    font-size: 3em;
+} .gridPortfolioItem {
+    width: 25em;
+} .portfolioImg {
+    width: 25em;
+}
+    /* testimonials section */
+    .testimonialH4Style {
+        margin-top: 1.5em;
+        margin-left: 6.5em;
+    } .contentStyle {
+        margin-top: 15em;
+        margin-left: 3em;
+        width: 90%;
+        height: 66%;
+    }
+
+    /* contact me section */
+    .contactContainer {
+        width: 86%;
+        height: 89%;
+        margin: 4em;
+        border: .5em solid rgba(0, 0, 0, .6);
+        padding: 5em;
+    } .contactH5Style {
+        font-size: 4em;
+    } 
+    label,
+    input[type=text],
+    input[type=email],
+    textarea {
+        font-size: 2.5em;
+}
+    input[type=text],
+    input[type=email],
+    textarea {
+        /* height: 1.5em; */
+        padding: 0 10px;
+        font-size: 1.5em;
+        border: .1em solid rgba(0, 0, 0, .6);
+    }
+    input[type=submit] {
+        padding: 13px 33px;
+        font-size: 2em;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        font-weight: 600;
+        border: 0 none;
+      }
+    input[type=submit]:hover {
+        padding: 10px 30px;
+        font-weight: 600;
+    }
+    /* footer section */
+    .footerContainer {
+        width: 30%;
+        margin-top: 3em;
+        margin-left: 21em;
+    } .followMeFooter span {
+        font-size: 2em;
+    }
+}
+
+/* need to review */
+@media screen and (max-width: 414px) {
+    /* home or showcase section */
+    .portfolioSection {
+        height: 90em;
+    }
+    .logo img {
+        width: 6em;
+    } .mainNavBar {
+        float: right;
+        margin-top: 3em;
+    } .mainNavBar a {
+        padding: .1em .3em;
+        font-size: 6px;
+        font-weight: 600;
+    } .homeHero {
+        width: 100%;
+        margin-top: 12em;
+        margin-left: 0;
+    } section h1 {
+        font-size: 2em;
+        margin-bottom: .5em;
+        font-weight: 900;
+    } .homeHeroSpan {
+        margin-bottom: 2em;
+        font-size: 1.4em;
+        width: 90%;
+        margin-left: 1em;
+    } .heroButton {
+        padding: .5em 1.3em;
+        font-size: 1.3em;
+        font-weight: 600;
+    }
+    /* about me section */
+    .aboutContainer, .skillsContainer  {
+        display: block;
+        width: 100%;
+        padding: 0;
+    } .aboutMeBorder {
+        margin-top: 0em;
+        margin-bottom: .5em;
+        margin-left: 0em;
+        width: 100%;
+        height: 100%;
+    } .skillsBorder {
+        margin-top: 0em;
+        margin-bottom: 0em;
+        margin-left: 0em;
+        width: 100%;
+        height: 100%;
+    } .aboutMeContent {
+        margin: 1em;
+        padding-bottom: 0em;
+    } .skillsContent {
+        margin: 2em;
+        padding-bottom: .5em;
+    } h2 {
+        font-size: 2em;
+        margin-top: .5em;
+        margin-bottom: .2em;
+      }
+    .carlosImg {
+        width: 8em;
+        border-radius: 10%;
+        float: none;
+        margin-right: 0em;
+        margin-top: 1em;
+    } .aboutMeP {
+        font-size: .711em;
+    } .gridSkillsContainer {
+        margin-top: 0em;
+        grid-template-columns: auto auto auto auto;
+        grid-column-gap: 50px;
+        grid-row-gap: 10px;
+        grid-column-gap: 0;
+        grid-row-gap: 7em;
+    } .skillsImg {
+        width: 2em;
+        vertical-align: middle;
+    } 
+    /* portfolio section */
+    .portfolioContent {
+        grid-template-columns: auto;
+        grid-column-gap: 0;
+        grid-row-gap: 4em;
+    } .portfolioH3Style {
+        margin-left: 4.5em;
+        font-size: 2em;
+    } .gridPortfolioItem {
+        width: 20em;
+        overflow: auto;
+    } .portfolioImg {
+        width: 20em;
+    }
+    .ribbon {
+        position: absolute;
+        left: 0;
+        bottom: 20px;
+        width: 100%;
+        padding: .6em;
+        font-weight: 300;
+        line-height: 30px;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-size: 1.5em;
+        background-color: rgb(50, 56, 49);
+        color: rgb(255, 238, 0);
+        
+    }
+    /* testimonials section */
+    .testimonialH4Style {
+        margin-top: 1.5em;
+        margin-left: 3.7em;
+        font-size: 2em;
+    } .contentStyle {
+        margin-top: 10em;
+        margin-left: 1em;
+        width: 90%;
+        height: 50%;
+    } .slideshow {
+        margin: 0 auto;
+        width: 75%;
+        height: 100%;
+    } .slide1 {
+        margin: 10px;  /* em didn't work */
+        margin-top: .5em;
+        padding: 1em .5em;
+        box-shadow: 2px 6px 8px rgba(26, 25, 25, 0.6);
+        width: 1em;
+        height: 14.5em;
+    } .slide2 {
+        margin: 10px;  /* em didn't work */
+        margin-top: .5em;
+        padding: 1em .5em;
+        box-shadow: 2px 6px 8px rgba(26, 25, 25, 0.6);
+        width: 1em;
+        height: 14.5em;
+    } .slide3 {
+        margin: 10px;  /* em didn't work */
+        margin-top: .5em;
+        padding: 1em .5em;
+        box-shadow: 2px 6px 8px rgba(26, 25, 25, 0.6);
+        width: 1em;
+        height: 14.5em;
+    }
+
+    /* contact me section */
+    .contactContainer {
+        width: 92.5%;
+        height: 97%;
+        margin: 1em;
+        border: .5em solid rgba(0, 0, 0, .6);
+        padding: 2em;
+    } .contactH5Style {
+        font-size: 2.1em;
+    } 
+    label,
+    input[type=text],
+    input[type=email],
+    textarea {
+        font-size: 2.1em;
+}
+    input[type=text],
+    input[type=email],
+    textarea {
+        /* height: 1.5em; */
+        padding: 0 10px;
+        font-size: 1.1em;
+        border: .1em solid rgba(0, 0, 0, .6);
+    }
+    input[type=submit] {
+        padding: 13px 33px;
+        font-size: 1em;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        font-weight: 600;
+        border: 0 none;
+      }
+    input[type=submit]:hover {
+        padding: 10px 30px;
+        font-weight: 600;
+    }
+    /* footer section */
+    .footerContainer {
+        width: 45%;
+        margin-top: 3em;
+        margin-left: 8em;
+    } .followMeFooter span {
+        font-size: 1.5em;
+    }
+
+
+
+
+
+
+
+@media screen and (max-width: 375px) {
+    /* home or showcase section */
+    .portfolioSection {
+        height: 90em;
+    }
+    .logo img {
+        width: 6em;
+    } .mainNavBar {
+        float: right;
+        margin-top: 3em;
+    } .mainNavBar a {
+        padding: .1em .3em;
+        font-size: 6px;
+        font-weight: 600;
+    } .homeHero {
+        width: 100%;
+        margin-top: 12em;
+        margin-left: 0;
+    } section h1 {
+        font-size: 2em;
+        margin-bottom: .5em;
+        font-weight: 900;
+    } .homeHeroSpan {
+        margin-bottom: 2em;
+        font-size: 1.4em;
+        width: 90%;
+        margin-left: 1em;
+    } .heroButton {
+        padding: .5em 1.3em;
+        font-size: 1.3em;
+        font-weight: 600;
+    }
+    /* about me section */
+    .aboutContainer, .skillsContainer  {
+        display: block;
+        width: 100%;
+        padding: 0;
+    } .aboutMeBorder {
+        margin-top: 0em;
+        margin-bottom: .5em;
+        margin-left: 0em;
+        width: 100%;
+        height: 100%;
+    } .skillsBorder {
+        margin-top: 0em;
+        margin-bottom: 0em;
+        margin-left: 0em;
+        width: 100%;
+        height: 100%;
+    } .aboutMeContent {
+        margin: 1em;
+        padding-bottom: 0em;
+    } .skillsContent {
+        margin: 2em;
+        padding-bottom: .5em;
+    } h2 {
+        font-size: 2em;
+        margin-top: .5em;
+        margin-bottom: .2em;
+      }
+    .carlosImg {
+        width: 8em;
+        border-radius: 10%;
+        float: none;
+        margin-right: 0em;
+        margin-top: 1em;
+    } .aboutMeP {
+        font-size: .711em;
+    } .gridSkillsContainer {
+        margin-top: 0em;
+        grid-template-columns: auto auto auto auto;
+        grid-column-gap: 50px;
+        grid-row-gap: 10px;
+        grid-column-gap: 0;
+        grid-row-gap: 7em;
+    } .skillsImg {
+        width: 2em;
+        vertical-align: middle;
+    } 
+    /* portfolio section */
+    .portfolioContent {
+        grid-template-columns: auto;
+        grid-column-gap: 0;
+        grid-row-gap: 4em;
+    } .portfolioH3Style {
+        margin-left: 4.5em;
+        font-size: 2em;
+    } .gridPortfolioItem {
+        width: 20em;
+        overflow: auto;
+    } .portfolioImg {
+        width: 20em;
+    }
+    .ribbon {
+        position: absolute;
+        left: 0;
+        bottom: 20px;
+        width: 100%;
+        padding: .6em;
+        font-weight: 300;
+        line-height: 30px;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-size: 1.5em;
+        background-color: rgb(50, 56, 49);
+        color: rgb(255, 238, 0);
+        
+    }
+    /* testimonials section */
+    .testimonialH4Style {
+        margin-top: 1.5em;
+        margin-left: 3.7em;
+        font-size: 2em;
+    } .contentStyle {
+        margin-top: 10em;
+        margin-left: 1em;
+        width: 90%;
+        height: 50%;
+    } .slideshow {
+        margin: 0 auto;
+        width: 75%;
+        height: 100%;
+    } .slide1 {
+        margin: 10px;  /* em didn't work */
+        margin-top: .5em;
+        padding: 1em .5em;
+        box-shadow: 2px 6px 8px rgba(26, 25, 25, 0.6);
+        width: 1em;
+        height: 14.5em;
+    } .slide2 {
+        margin: 10px;  /* em didn't work */
+        margin-top: .5em;
+        padding: 1em .5em;
+        box-shadow: 2px 6px 8px rgba(26, 25, 25, 0.6);
+        width: 1em;
+        height: 14.5em;
+    } .slide3 {
+        margin: 10px;  /* em didn't work */
+        margin-top: .5em;
+        padding: 1em .5em;
+        box-shadow: 2px 6px 8px rgba(26, 25, 25, 0.6);
+        width: 1em;
+        height: 14.5em;
+    }
+
+    /* contact me section */
+    .contactContainer {
+        width: 92.5%;
+        height: 97%;
+        margin: 1em;
+        border: .5em solid rgba(0, 0, 0, .6);
+        padding: 2em;
+    } .contactH5Style {
+        font-size: 2.1em;
+    } 
+    label,
+    input[type=text],
+    input[type=email],
+    textarea {
+        font-size: 2.1em;
+}
+    input[type=text],
+    input[type=email],
+    textarea {
+        /* height: 1.5em; */
+        padding: 0 10px;
+        font-size: 1.1em;
+        border: .1em solid rgba(0, 0, 0, .6);
+    }
+    input[type=submit] {
+        padding: 13px 33px;
+        font-size: 1em;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        font-weight: 600;
+        border: 0 none;
+      }
+    input[type=submit]:hover {
+        padding: 10px 30px;
+        font-weight: 600;
+    }
+    /* footer section */
+    .footerContainer {
+        width: 45%;
+        margin-top: 3em;
+        margin-left: 8em;
+    } .followMeFooter span {
+        font-size: 1.5em;
+    }
+
+
+
+
+
+
+/* need to review */
+@media screen and (max-width: 320px) {
+    /* home or showcase section */
+    .portfolioSection {
+        height: 90em;
+    }
+    .logo img {
+        width: 6em;
+    } .mainNavBar {
+        float: right;
+        margin-top: 3em;
+    } .mainNavBar a {
+        padding: .1em .3em;
+        font-size: 6px;
+        font-weight: 600;
+    } .homeHero {
+        width: 100%;
+        margin-top: 12em;
+        margin-left: 0;
+    } section h1 {
+        font-size: 2em;
+        margin-bottom: .5em;
+        font-weight: 900;
+    } .homeHeroSpan {
+        margin-bottom: 2em;
+        font-size: 1.4em;
+        width: 90%;
+        margin-left: 1em;
+    } .heroButton {
+        padding: .5em 1.3em;
+        font-size: 1.3em;
+        font-weight: 600;
+    }
+    /* about me section */
+    .aboutContainer, .skillsContainer  {
+        display: block;
+        width: 100%;
+        padding: 0;
+    } .aboutMeBorder {
+        margin-top: 0em;
+        margin-bottom: .5em;
+        margin-left: 0em;
+        width: 100%;
+        height: 100%;
+    } .skillsBorder {
+        margin-top: 0em;
+        margin-bottom: 0em;
+        margin-left: 0em;
+        width: 100%;
+        height: 100%;
+    } .aboutMeContent {
+        margin: 1em;
+        padding-bottom: 0em;
+    } .skillsContent {
+        margin: 2em;
+        padding-bottom: .5em;
+    } h2 {
+        font-size: 2em;
+        margin-top: .5em;
+        margin-bottom: .2em;
+      }
+    .carlosImg {
+        width: 8em;
+        border-radius: 10%;
+        float: none;
+        margin-right: 0em;
+        margin-top: 1em;
+    } .aboutMeP {
+        font-size: .711em;
+    } .gridSkillsContainer {
+        margin-top: 0em;
+        grid-template-columns: auto auto auto auto;
+        grid-column-gap: 50px;
+        grid-row-gap: 10px;
+        grid-column-gap: 0;
+        grid-row-gap: 7em;
+    } .skillsImg {
+        width: 2em;
+        vertical-align: middle;
+    } 
+    /* portfolio section */
+    .portfolioContent {
+        grid-template-columns: auto;
+        grid-column-gap: 0;
+        grid-row-gap: 4em;
+    } .portfolioH3Style {
+        margin-left: 4.5em;
+        font-size: 2em;
+    } .gridPortfolioItem {
+        width: 20em;
+        overflow: auto;
+    } .portfolioImg {
+        width: 20em;
+    }
+    .ribbon {
+        position: absolute;
+        left: 0;
+        bottom: 20px;
+        width: 100%;
+        padding: .6em;
+        font-weight: 300;
+        line-height: 30px;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-size: 1.5em;
+        background-color: rgb(50, 56, 49);
+        color: rgb(255, 238, 0);
+        
+    }
+    /* testimonials section */
+    .testimonialH4Style {
+        margin-top: 1.5em;
+        margin-left: 3.7em;
+        font-size: 2em;
+    } .contentStyle {
+        margin-top: 10em;
+        margin-left: 1em;
+        width: 90%;
+        height: 50%;
+    } .slideshow {
+        margin: 0 auto;
+        width: 75%;
+        height: 100%;
+    } .slide1 {
+        margin: 10px;  /* em didn't work */
+        margin-top: .5em;
+        padding: 1em .5em;
+        box-shadow: 2px 6px 8px rgba(26, 25, 25, 0.6);
+        width: 1em;
+        height: 14.5em;
+    } .slide2 {
+        margin: 10px;  /* em didn't work */
+        margin-top: .5em;
+        padding: 1em .5em;
+        box-shadow: 2px 6px 8px rgba(26, 25, 25, 0.6);
+        width: 1em;
+        height: 14.5em;
+    } .slide3 {
+        margin: 10px;  /* em didn't work */
+        margin-top: .5em;
+        padding: 1em .5em;
+        box-shadow: 2px 6px 8px rgba(26, 25, 25, 0.6);
+        width: 1em;
+        height: 14.5em;
+    }
+
+    /* contact me section */
+    .contactContainer {
+        width: 92.5%;
+        height: 97%;
+        margin: 1em;
+        border: .5em solid rgba(0, 0, 0, .6);
+        padding: 2em;
+    } .contactH5Style {
+        font-size: 2.1em;
+    } 
+    label,
+    input[type=text],
+    input[type=email],
+    textarea {
+        font-size: 2.1em;
+}
+    input[type=text],
+    input[type=email],
+    textarea {
+        /* height: 1.5em; */
+        padding: 0 10px;
+        font-size: 1.1em;
+        border: .1em solid rgba(0, 0, 0, .6);
+    }
+    input[type=submit] {
+        padding: 13px 33px;
+        font-size: 1em;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        font-weight: 600;
+        border: 0 none;
+      }
+    input[type=submit]:hover {
+        padding: 10px 30px;
+        font-weight: 600;
+    }
+    /* footer section */
+    .footerContainer {
+        width: 45%;
+        margin-top: 3em;
+        margin-left: 8em;
+    } .followMeFooter span {
+        font-size: 1.5em;
+    }
